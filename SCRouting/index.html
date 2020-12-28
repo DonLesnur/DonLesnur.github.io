@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SC-Routing</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./lib/css/leaflet.css">
+
+	<script src="js/functions.js"></script>
+	<script src="./lib/js/d82a41862f.js"></script>
+	<script src="./lib/js/leaflet.js"></script>
+	<script src="./lib/js/leaflet-ant-path.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./lib/js/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<script src="./data/cel_objects.geojson"></script>
+	<script src="./data/loc.json"></script>
+
+	<style>
+		#map{
+			top: 0;
+			bottom: 5px;
+			height: 90vh;
+			max-height: 590px;
+		}
+		body {
+			color:#fff;
+			background-color: #666;
+		}
+
+	</style>
+</head>
+
+
+<body onload="init()">
+	<div class="container-fluid">
+		<div class="row" style="margin-top:5px;">
+
+			<div class="col-sm-7" >
+
+				<form>
+					<div class="input-group" >
+						<input type="text" class="form-control" id="inp_search" name="Suche" placeholder="Suche ..." oninput="search_location()" onclick="search_location()" >
+						<div class="input-group-btn">
+							<div class="dropdown">
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+									Ort wählen
+								</button>
+								<div class="dropdown-menu dropdown-menu-right" id="drop_dep" style="overflow: auto; max-height: 500px;">
+								</div>
+							</div>
+						</div>
+						<div class="input-group-btn">
+							<button class="btn btn-default" title="Weiterleitung zu GitHub" onclick=" window.open('https://github.com/DonLesnur/DonLesnur.github.io/tree/main/SCRouting','_blank')">
+								<i class="fa fa-github"></i>
+      </button>
+						</div>
+					</div>
+				</form>
+				<div style="overflow-y:auto;max-height: 553px">
+					<table class="table table-dark" >
+						<thead>
+							<tr id="dep_thead">
+							</tr>
+						</thead>
+						<thead id="dep_tbody">
+						</thead>
+					</table>
+				</div>
+			</div>
+			<div class="col-sm-5">
+				<div id="map" class="map" style="position:relative"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
