@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+  <link rel="stylesheet" media="screen" href="./Beispiel:SELFHTML-Beispiel-Grundlayout.css" />
+  <title>JS - File Upload-1</title>
+</head>
+<body>
+  <h1>JS - File Upload-1</h1>
+  <main>
+    <p>Es wird ein Eingabefeld erzeugt, das Attribut multiple sorgt dafür, dass im Auswahldialog mehrere Dateien ausgewählt werden können </p>
+    <p><input type="file" id="files" name="files[]" multiple /></p>
+    <p>Ein Ausgabefeld zur Anzeige der ausgewählten Dateien:</p>
+    <output id="list"></output> 
+  </main>
+<script>
+  function dateiupload(evt) {
+    var dateien = evt.target.files; // FileList objekt
+
+    // erste Datei auswählen (wichtig, weil IMMER ein FileList Objekt generiert wird)
+    var uploadDatei = dateien[0];
+	console.log(uploadDatei);
+    // Ein Objekt um Dateien einzulesen
+    var reader = new FileReader();
+
+    var senddata = new Object();
+    // Auslesen der Datei-Metadaten
+    senddata.name = uploadDatei.name;
+    senddata.date = uploadDatei.lastModified;
+    senddata.size = uploadDatei.size;
+    senddata.type = uploadDatei.type;
+
+    // Wenn der Dateiinhalt ausgelesen wurde...
+    reader.onload = function(theFileData) {
+		console.log(theFileData.target.result);
+      senddata.fileData = theFileData.target.result; // Ergebnis vom FileReader auslesen
+
+      /*
+      Code für AJAX-Request hier einfügen
+      */
+    }
+
+    // Die Datei einlesen und in eine Data-URL konvertieren
+    reader.readAsDataURL(uploadDatei);
+  }
+  //Falls neue Eingabe, neuer Aufruf der Auswahlfunktion
+  document.getElementById('files').addEventListener('change', dateiupload, false);
+</script>
+</body>
+</html>
