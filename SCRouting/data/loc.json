@@ -1,0 +1,104 @@
+var loc=[{
+"features": [
+{"PMS": "ARC L1", "Locations": [{"Location": "Rest Stop Space Station ARC L1",  "properties": [{"Landingpad": null, "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "ARC L2", "Locations": [{"Location": "Rest Stop Space Station ARC L2",  "properties": [{"Landingpad": null, "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "ST3-02", "Locations": [{"Location": "Comm Array ST3-02",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": null}]}]},
+{"PMS": "ST3-18", "Locations": [{"Location": "Comm Array ST3-18",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": null}]}]},
+{"PMS": "ST3-35", "Locations": [{"Location": "Comm Array ST3-35",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": null}]}]},
+{"PMS": "ST3-90", "Locations": [{"Location": "Comm Array ST3-90",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": null}]}]},
+{"PMS": "Security Post Kareah", "Locations": [{"Location": "Security Post Kareah", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": null}]}]},
+{"PMS": "Covalex Hub Gundo", "Locations": [{"Location": "Covalex Hub Gundo", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]}]},
+{"PMS": "Delamar", "Locations": [{"Location": "Levski", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": "Yes", "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "ST2-28", "Locations": [{"Location": "Comm Array ST2-28", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": null}]}]},
+{"PMS": "ST2-47", "Locations": [{"Location": "Comm Array ST2-47", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": null}]}]},
+{"PMS": "ST2-55", "Locations": [{"Location": "Comm Array ST2-55", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": null}]}]},
+{"PMS": "ST2-76", "Locations": [{"Location": "Comm Array ST2-76", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": null}]}]},
+{"PMS": "Port Olisar", "Locations": [{"Location": "Port Olisar", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "GrimHEX", "Locations": [{"Location": "GrimHEX", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "HUR L1", "Locations": [{"Location": "Rest Stop Space Station HUR L1", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "HUR L2", "Locations": [{"Location": "Rest Stop Space Station HUR L2", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "ST1-13", "Locations": [{"Location": "Comm Array ST1-13", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes" }]}]},
+{"PMS": "ST1-48", "Locations": [{"Location": "Comm Array ST1-48", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes" }]}]},
+{"PMS": "ST1-61", "Locations": [{"Location": "Comm Array ST1-61", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes" }]}]},
+{"PMS": "ST1-92", "Locations": [{"Location": "Comm Array ST1-92", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes" }]}]},
+{"PMS": "CRU L1", "Locations": [{"Location": "Rest Stop Space Station CRU L1", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "CRU L4", "Locations": [{"Location": "Rest Stop Space Station CRU L4", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "CRU L5", "Locations": [{"Location": "Rest Stop Space Station CRU L5", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "HUR L3", "Locations": [{"Location": "Rest Stop Space Station HUR L3", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "HUR L4", "Locations": [{"Location": "Rest Stop Space Station HUR L4", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "HUR L5", "Locations": [{"Location": "Rest Stop Space Station HUR L5", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "ARC L3", "Locations": [{"Location": "Rest Stop Space Station ARC L3", "properties": [{"Landingpad": null, "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "ARC L4", "Locations": [{"Location": "Rest Stop Space Station ARC L4", "properties": [{"Landingpad": null, "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "ARC L5", "Locations": [{"Location": "Rest Stop Space Station ARC L5", "properties": [{"Landingpad": null, "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": null, "Clothing": "Yes", "Trading": "Yes"}]}]},
+{"PMS": "ArcCorp", "Locations": [
+{"Location": "Area 04", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Area 06", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Area 11", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Area 17", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Area 18", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Yes", "Shipparts": "Yes", "Ships": "Yes", "Clothing": "Yes", "Trading": "Yes"}]},
+{"Location": "Area 20", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]}
+]},
+{"PMS": "Lyria", "Locations": [
+{"Location": "Humboldt Mines",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Loveridge Mineral Reserve",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Paradise Cove",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Shubin Mining Facility SAL-2",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Shubin Mining Facility SAL-5",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Shubin Processing Facility SPAL-12",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Shubin Processing Facility SPAL-3",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Shubin Processing Facility SPAL-7",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Shubin Processing Facility SPAL-9",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "The Orphanage",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "The Pit",  "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]}
+]},
+{"PMS": "Wala", "Locations": [
+{"Location": "ArcCorp Mining Area 045", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "ArcCorp Mining Area 048", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "ArcCorp Mining Area 056", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "ArcCorp Mining Area 061", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]}
+]},
+{"PMS": "Cellin", "Locations": [
+{"Location": "Gallete Family Farms", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Hickes Research Outpost", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Terra Mills HydroFarm", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Tram & Myers Mining", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]}
+]},
+{"PMS": "Daymar", "Locations": [
+{"Location": "ArcCorp Mining Area 141", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Bountiful Harvest Hydroponics", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Kudre Ore", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Shubin Mining Facility SCD-1", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]}
+]},
+{"PMS": "Yela", "Locations": [
+{"Location": "ArcCorp Mining Area 157", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Benson Mining Outpost", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Deakins Research Outpost", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Jumptown", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]}
+]},
+{"PMS": "Aberdeen", "Locations": [
+{"Location": "HDMS-Anderson", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "HDMS-Norgaard", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]}
+]},
+{"PMS": "Arial", "Locations": [
+{"Location": "HDMS-Bezdek", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "HDMS-Lathan", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]}
+]},
+{"PMS": "Hurston", "Locations": [
+{"Location": "CBD", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "HDMS-Edmond", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "HDMS-Hadley", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "HDMS-Oparei", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "HDMS-Pinewood", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "HDMS-Stanhope", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "HDMS-Thedus", "properties": [{"Landingpad": null, "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "Lorville", "properties": [{"Landingpad": "Yes", "Armour": "Yes", "Weapons": "Multitool", "Shipparts": "Yes", "Ships": "Yes", "Clothing": "Yes", "Trading": "Yes"}]}
+]},
+{"PMS": "Ita", "Locations": [
+{"Location": "HDMS-Ryder", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "HDMS-Woodruff", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]}
+]},
+{"PMS": "Magda", "Locations": [
+{"Location": "HDMS-Hahn", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]},
+{"Location": "HDMS-Perlman", "properties": [{"Landingpad": "Yes", "Armour": null, "Weapons": null, "Shipparts": null, "Ships": null, "Clothing": null, "Trading": "Yes"}]}
+]}
+]}]
