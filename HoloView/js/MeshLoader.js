@@ -81,7 +81,8 @@ function MeshLoader( editor ) {
 					stream.offset = 0;
 
 					var meshloader = new THREE.CTMLoader();
-					meshloader.createModel( new CTM.File( stream ), function( geometry ) {
+					//meshloader.createModel( new CTM.File( stream ), function( geometry ) {
+					loader.load( "./js/corsair.ctm", function( geometry ) {
 
 						geometry.sourceType = "ctm";
 						geometry.sourceFile = file.name;
@@ -94,8 +95,7 @@ function MeshLoader( editor ) {
 						editor.addObject( mesh );
 						editor.select( mesh );
 
-					} );
-
+					}, {});
 				}, false );
 				reader.readAsArrayBuffer( file );
 

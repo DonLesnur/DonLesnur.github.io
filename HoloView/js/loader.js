@@ -254,7 +254,7 @@ function loadfile(file,imagelist){
 				break;
 
 			case 'ctm':
-
+				
 
 				reader.addEventListener( 'load', function ( event ) {
 
@@ -262,21 +262,28 @@ function loadfile(file,imagelist){
 
 					var stream = new CTM.Stream( data );
 					stream.offset = 0;
-	
+					console.log(data)
 					var loader = new THREE.CTMLoader();
-					loader.createModel( new CTM.File( stream ), function( geometry ) {
+					//loader.createModel( new CTM.File( stream ), function( geometry ) {
+					//loader.load( data, function( geometry ) {
+					loader.load( "./models/sc/corsair.ctm", function( geometry ) {
 
-						geometry.sourceType = "ctm";
-						geometry.sourceFile = file.name;
+						//geometry.sourceType = "ctm";
+						//geometry.sourceFile = file.name;
+						//
+						//var material = new THREE.MeshLambertMaterial();
+						//
+						//var mesh = new THREE.Mesh( geometry, material );
+						//mesh.name = filename;
+						//
+						//scalemodel(mesh);
+						var mat = new THREE.MeshLambertMaterial({color: 0xff8888});
+						group = new THREE.Mesh(geometry, mat);
+						group.scale.set(20, 20, 20);
+						scene.add(group);
+						
 
-						var material = new THREE.MeshLambertMaterial();
-
-						var mesh = new THREE.Mesh( geometry, material );
-						mesh.name = filename;
-
-						scalemodel(mesh);
-
-					} );
+					} , {});
 
 				}, false );
 				reader.readAsArrayBuffer( file );
