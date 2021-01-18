@@ -501,8 +501,8 @@ function loadfile(file,imagelist){
 
 			case 'obj':
 
-				alert( 'Unsupported file format (' + extension +  ').' );
-				break;
+				//alert( 'Unsupported file format (' + extension +  ').' );
+				//break;
 				reader.addEventListener( 'load', function ( event ) {
 
 					var contents = event.target.result;
