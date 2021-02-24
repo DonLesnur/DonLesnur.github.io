@@ -7,3 +7,4 @@ Website zur Unterstützung beim Ausliefern von Paketen im Verse
 Techdemo zu Augmented Reality via Webbrowser (Darstellung eines [3D-Models](./ALE3D/ALE3D.html))
 # [HoloView](./HoloView/index.html)
 Techdemo zum Hologramm via Webbrowser (Darstellung eines [3D-Models](./ALE3D/ALE3D.html))
+![HoloView-Screenshot](https://github.com/DonLesnur/DonLesnur.github.io/raw/main/HoloView/img/screenshot.png)
