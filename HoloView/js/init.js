@@ -127,8 +127,10 @@ $(function(){
 		camera.updateProjectionMatrix();
 		effect.setSize( width, height );
 	}
-
-	$('.btn-number').mousedown(function(e){
+	
+	
+	
+	function btn_press(e){
 		e.preventDefault();
 
 		interval=setInterval(function () {
@@ -173,10 +175,25 @@ $(function(){
 				input.val(0);
 			}
 		}, 75);
+		
+	}
 
-	}).on("mouseup", function () {
+
+
+	//$('.btn-number').mousedown(function(e){
+	$('.btn-number').on("mousedown",function(e){
+	//$('.btn-number').touchstart(function(e){
+		btn_press(e)
+
+	//}).on("mouseup", function () {
+	}).on("touchstart", function (e) {
+		btn_press(e)
+    }).on("touchend", function () {
+        clearInterval(interval);
+    }).on("mouseup", function () {
         clearInterval(interval);
     });
+	
 	$('.input-number').focusin(function(){
 		$(this).data('oldValue', $(this).val());
 	});
