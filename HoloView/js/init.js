@@ -130,7 +130,10 @@ $(function(){
 	
 	
 	
-	function btn_press(e){
+
+
+	//$('.btn-number').mousedown(function(e){
+	$('.btn-number').on("touchstart mousedown", function (e) {
 		e.preventDefault();
 
 		interval=setInterval(function () {
@@ -175,22 +178,7 @@ $(function(){
 				input.val(0);
 			}
 		}, 75);
-		
-	}
-
-
-
-	//$('.btn-number').mousedown(function(e){
-	$('.btn-number').on("mousedown",function(e){
-	//$('.btn-number').touchstart(function(e){
-		btn_press(e)
-
-	//}).on("mouseup", function () {
-	}).on("touchstart", function (e) {
-		btn_press(e)
-    }).on("touchend", function () {
-        clearInterval(interval);
-    }).on("mouseup", function () {
+    }).on("touchend mouseup", function () {
         clearInterval(interval);
     });
 	
