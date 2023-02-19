@@ -133,7 +133,7 @@ $(function(){
 
 
 	//$('.btn-number').mousedown(function(e){
-	$('.btn-number').on("touchstart mousedown", function (e) {
+	$('.btn-number').on('touchstart mousedown', function (e) {
 		e.preventDefault();
 
 		interval=setInterval(function () {
@@ -178,7 +178,7 @@ $(function(){
 				input.val(0);
 			}
 		}, 75);
-    }).on("touchend mouseup", function () {
+    }).on('touchend mouseup', function () {
         clearInterval(interval);
     });
 	

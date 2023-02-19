@@ -1,0 +1,75 @@
+var texloader = new THREE.TextureLoader()
+				var a_materials = [
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/a2.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/a4.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/a5.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/UV_Grid_Sm.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/a1.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/a3.jpg')
+					})
+				];
+				a_materials.side = THREE.DoubleSide;
+
+				var b_materials = [
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/UV_Grid_Sm.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/UV_Grid_Sm.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/b5.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/UV_Grid_Sm.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/b1.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/b3.jpg')
+					})
+				];
+
+				var c_materials = [
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/c2.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/c4.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/c5.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/UV_Grid_Sm.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/c1.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('img/c3.jpg')
+					})
+				];
+
+				object = new THREE.Mesh( new THREE.BoxBufferGeometry( 14, 10.5, 52, 4, 4, 4 ), a_materials );
+				object.position.set( 0, 0, 0 );
+				scene.add( object );
+
+				object = new THREE.Mesh( new THREE.BoxBufferGeometry( 11, 9.5, 10, 4, 4, 4 ), b_materials );
+				object.position.set( 12.5, -0.5, -21);
+				scene.add( object );
+
+				object = new THREE.Mesh( new THREE.BoxBufferGeometry( 16, 21, 55, 4, 4, 4 ), c_materials );
+				object.position.set( 26, 5.25, -43);

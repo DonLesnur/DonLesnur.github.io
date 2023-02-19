@@ -153,7 +153,94 @@ function loadfile(file,imagelist){
 	try{
 		switch ( extension ) {
 
-			case 'amf':
+			case 'script':
+
+				//var scene = new THREE.Scene();
+				//scene.name = filename;
+					
+				var texloader = new THREE.TextureLoader()
+				var a_materials = [
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/a2.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/a4.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/a5.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/UV_Grid_Sm.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/a1.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/a3.jpg')
+					})
+				];
+				a_materials.side = THREE.DoubleSide;
+
+				var b_materials = [
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/UV_Grid_Sm.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/UV_Grid_Sm.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/b5.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/UV_Grid_Sm.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/b1.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/b3.jpg')
+					})
+				];
+
+				var c_materials = [
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/c2.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/c4.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/c5.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/UV_Grid_Sm.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/c1.jpg')
+					}),
+					new THREE.MeshLambertMaterial({
+						map: texloader.load('models/ale/c3.jpg')
+					})
+				];
+
+				object = new THREE.Mesh( new THREE.BoxBufferGeometry( 14, 10.5, 52, 4, 4, 4 ), a_materials );
+				object.position.set( 0, 0, 0 );
+				group.add( object );
+
+				object = new THREE.Mesh( new THREE.BoxBufferGeometry( 11, 9.5, 10, 4, 4, 4 ), b_materials );
+				object.position.set( 12.5, -0.5, -21);
+				group.add( object );
+
+				object = new THREE.Mesh( new THREE.BoxBufferGeometry( 16, 21, 55, 4, 4, 4 ), c_materials );
+				object.position.set( 26, 5.25, -43);
+				group.add( object );
+
+				group.scale.set(0.10, 0.10, 0.10);
+				
+
+				break;
+				
+				case 'amf':
 
 				alert( 'Unsupported file format (' + extension +  ').' );
 				break;
@@ -254,7 +341,8 @@ function loadfile(file,imagelist){
 				break;
 
 			case 'ctm':
-				
+				alert( 'Unsupported file format (' + extension +  ').' );
+				break;
 
 				reader.addEventListener( 'load', function ( event ) {
 
@@ -262,21 +350,21 @@ function loadfile(file,imagelist){
 
 					var stream = new CTM.Stream( data );
 					stream.offset = 0;
-					console.log(data)
+					//console.log(data)
 					var loader = new THREE.CTMLoader();
 					//loader.createModel( new CTM.File( stream ), function( geometry ) {
-					//loader.load( data, function( geometry ) {
-					loader.load( "./models/sc/corsair.ctm", function( geometry ) {
+					loader.load( data, function( geometry ) {
+					//loader.load( "./models/sc/corsair.ctm", function( geometry ) {
 
-						//geometry.sourceType = "ctm";
-						//geometry.sourceFile = file.name;
+						geometry.sourceType = "ctm";
+						geometry.sourceFile = file.name;
 						//
 						//var material = new THREE.MeshLambertMaterial();
 						//
-						//var mesh = new THREE.Mesh( geometry, material );
-						//mesh.name = filename;
+						var mesh = new THREE.Mesh( geometry, material );
+						mesh.name = filename;
 						//
-						//scalemodel(mesh);
+						scalemodel(mesh);
 						var mat = new THREE.MeshLambertMaterial({color: 0xff8888});
 						group = new THREE.Mesh(geometry, mat);
 						group.scale.set(20, 20, 20);
